@@ -6,9 +6,10 @@ A sanctuary for custom Obsidian UI overrides. This repository is dedicated to gr
 
 ## The Arsenal
 
-| Snippet | Description | Target |
-| --- | --- | --- |
-| `monokai-codeblocks.css` | Forces a Monokai dark theme strictly on code blocks without bleeding into inline code or breaking Live Preview rendering. | `.cm-line.HyperMD-codeblock`, `.markdown-rendered pre` |
+| Snippet | Description | Target | Demo |
+| --- | --- | --- | --- |
+| `monokai-codeblocks.css` | Forces a Monokai dark theme strictly on code blocks without bleeding into inline code or breaking Live Preview rendering. | `.cm-line.HyperMD-codeblock`, `.markdown-rendered pre` | <img width="1624" height="1061" alt="image" src="https://github.com/user-attachments/assets/161f397c-71d1-4476-9381-6ec52b6031ac" />
+ |
 
 ## Deployment
 
