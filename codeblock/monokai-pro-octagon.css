@@ -1,0 +1,95 @@
+/* Monokai Pro Octagon Code Block Snippet for Obsidian (Light & Dark Mode) */
+
+/* ==========================================================================
+   1. BACKGROUND & LAYOUT (Reading & Editing Views)
+   ========================================================================= */
+
+/* Reading view block wrapper */
+.markdown-rendered pre {
+  background-color: #282a3a !important;
+  color: #eaf2f1 !important;
+  border-radius: 6px;
+}
+
+/* Editing view container and block backgrounds */
+.markdown-source-view .cm-embed-block.cm-codeblock,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock {
+  background-color: #282a3a !important;
+}
+
+/* Force baseline text & fallback punctuation color across both views */
+.markdown-source-view.mod-cm6 .HyperMD-codeblock span,
+.markdown-source-view.mod-cm6 .cm-codeblock,
+.markdown-source-view.mod-cm6 .cm-punctuation,
+.markdown-rendered code[class*="language-"],
+.token.punctuation {
+  color: #eaf2f1 !important;
+  opacity: 1 !important;
+}
+
+/* ==========================================================================
+   2. SYNTAX TOKENS (PrismJS for Reading & CodeMirror 6 for Editing)
+   ========================================================================= */
+
+/* Comments - Muted slate grey */
+.token.comment, .token.prolog, .token.doctype, .token.cdata,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock .cm-comment { 
+  color: #696d77 !important; 
+  font-style: italic !important;
+}
+
+/* Strings - Warm Octagon Gold/Yellow */
+.token.string, .token.attr-value,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock .cm-string { 
+  color: #ffd76d !important; 
+}
+
+/* Keywords, Operators, and Tags - Octagon Coral Pink */
+.token.keyword, .token.operator, .token.url,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock .cm-keyword,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock .cm-operator,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock .cm-meta { 
+  color: #ff657a !important; 
+}
+
+/* Functions & Custom/Primitive Types - Soft Olive Green */
+.token.function, .token.class-name,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock .cm-def,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock .cm-type { 
+  color: #bad761 !important; 
+}
+
+/* Numbers & Booleans - Light Purple/Lavender */
+.token.number, .token.boolean,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock .cm-number,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock .cm-atom { 
+  color: #c39ac9 !important; 
+}
+
+/* Properties, Variables & Constants - Tangerine Orange */
+.token.property, .token.tag, .token.constant,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock .cm-property,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock .cm-variable,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock .cm-variable-2 { 
+  color: #ff9b5e !important; 
+}
+
+/* ==========================================================================
+   3. EDITING VIEW INTERFACE TWEAKS
+   ========================================================================= */
+
+/* Keep line numbers legible against the Octagon background */
+.cm-lineNumbers .cm-gutterElement {
+  color: #696d77 !important;
+}
+
+/* Keep the active line background clean inside code blocks */
+.markdown-source-view.mod-cm6 .HyperMD-codeblock.cm-activeLine {
+  background-color: #35384a !important;
+}
+
+/* Text selection color inside code blocks */
+.markdown-source-view.mod-cm6 .HyperMD-codeblock ::selection,
+.markdown-rendered pre ::selection {
+  background-color: #535763 !important;
+}
